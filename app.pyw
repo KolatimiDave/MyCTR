@@ -57,7 +57,7 @@ class MyCtr(tk.Tk):
         for widget in self.frame.winfo_children():
             widget.destroy()
 
-        filename = filedialog.askopenfilename(initialdir='C:\Program Files', title='Choose Fle', 
+        filename = filedialog.askopenfilename(initialdir='.', title='Choose Fle', 
         filetypes=( ('executables', '*.exe'), ('all files', '*.*') ))
         
         self.applications.append(filename)
